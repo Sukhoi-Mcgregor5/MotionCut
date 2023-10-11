@@ -11,7 +11,6 @@ Additionaly, the sub classes and parameters such as weather and humidity can als
 
 
 the number guessing game:
-In this game:
 
 The number_guessing_game function initializes a random number between 1 and 100 and allows the player to guess the number within 10 attempts.
 If the player's guess is too low, the program prompts the player to guess higher. If the guess is too high, the program prompts the player to guess lower.
