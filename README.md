@@ -23,3 +23,7 @@ You can run this code in a Python environment to play the number guessing game. 
 3)temperature converter 
 
 this code will convert from celcius to farenheit and vice versa
+
+4) weather app
+
+this is an application torun on python with an active weather api that gives you the weather in any location
