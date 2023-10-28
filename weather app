@@ -1,5 +1,5 @@
 API_ENDPOINT = "https://api.openweathermap.org/data/2.5/weather"
-API_KEY = api.openweathermap.org/data/2.5/weather?q=London,uk&APPID=d0c44827b50785d381cba032864c77d5
+API_KEY = "insert api key here"
 
 def get_weather_data(city_name):
     try:
