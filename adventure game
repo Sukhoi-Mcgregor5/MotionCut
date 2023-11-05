@@ -1,0 +1,60 @@
+def start_adventure():
+    print("Welcome to the Forest Quest!")
+    print("You enter a dark forest in search of the hidden treasure.")
+    print("Can you find it and escape unharmed? Your journey begins now.\n")
+
+    first_choice()
+
+def first_choice():
+    print("You come to a fork in the path. Do you go left or right?")
+    print("Type 'left' to go left or 'right' to go right.")
+    choice = input("> ").lower()
+
+    if choice == 'left':
+        bear_encounter()
+    elif choice == 'right':
+        river_crossing()
+    else:
+        print("That's not a valid direction. Please choose 'left' or 'right'.")
+        first_choice()
+
+def bear_encounter():
+    print("\nYou've encountered a bear! Do you 'run' or 'climb' a tree?")
+    choice = input("> ").lower()
+
+    if choice == 'run':
+        print("\nYou managed to escape the bear but fell into a pit and got injured. Game Over.")
+    elif choice == 'climb':
+        print("\nThe bear couldn't climb the tree. You wait until it leaves and continue on.")
+        treasure_chamber()
+    else:
+        print("You must choose to 'run' or 'climb'.")
+        bear_encounter()
+
+def river_crossing():
+    print("\nYou reach a river. Do you 'swim' across or 'walk' along the river?")
+    choice = input("> ").lower()
+
+    if choice == 'swim':
+        print("\nYou swam across safely and continue on your journey.")
+        treasure_chamber()
+    elif choice == 'walk':
+        print("\nYou were attacked by crocodiles while walking along the river. Game Over.")
+    else:
+        print("You must choose to 'swim' or 'walk'.")
+        river_crossing()
+
+def treasure_chamber():
+    print("\nYou finally arrive at the treasure chamber! Do you open the 'big' or 'small' chest?")
+    choice = input("> ").lower()
+
+    if choice == 'big':
+        print("\nThe big chest was a trap! You are captured by forest spirits. Game Over.")
+    elif choice == 'small':
+        print("\nYou chose wisely. The small chest contains the treasure! You win!")
+    else:
+        print("You must choose the 'big' or 'small' chest.")
+        treasure_chamber()
+
+
+start_adventure()
