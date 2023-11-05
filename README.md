@@ -27,3 +27,10 @@ this code will convert from celcius to farenheit and vice versa
 4) weather app
 
 this is an application torun on python with an active weather api that gives you the weather in any location
+
+
+5)Text based adventure game
+
+this is a simple text prompt based game that runs in the terminal of any python compiler. Gives you simple choices like left and right, climb and run
+
+
